@@ -52,7 +52,7 @@ module.exports = {
    });
    
    
-   return await queryInterface.bulkInsert('Jobs', [{
+   return await queryInterface.bulkCreate('Jobs', [{
     name: 'Teste',
     candidateDescript: 'Teste',
     remote: true,
