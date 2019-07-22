@@ -2,13 +2,13 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    
-   return queryInterface.createTable('Locations', {
+
+    return queryInterface.createTable('Locations', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false,
-        autoIncrement: true 
+        autoIncrement: true
       },
       name: {
         type: Sequelize.STRING
@@ -21,14 +21,14 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       }
-      
+
     });
 
-    
+
   },
 
   down: (queryInterface) => {
-    
-   return queryInterface.dropTable('Locations');
+
+    return queryInterface.dropTable('Locations');
   }
 };
