@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "root",
-    "password": "password",
-    "database": "projetofinal",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "alakjierosgtbo",
+    "password": "f840d93b9cf4ecc7ab9e0a6f59d7fdd93c6f3ca88e5752bd54baa0c0145ead24",
+    "database": "deofo6qc3dvbkc",
+    "host": "ec2-54-204-35-248.compute-1.amazonaws.com",
+    "dialect": "postgres"
   },
   "test": {
     "username": "root",
@@ -14,11 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "password",
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "alakjierosgtbo",
+    "password": "f840d93b9cf4ecc7ab9e0a6f59d7fdd93c6f3ca88e5752bd54baa0c0145ead24",
+    "database": "deofo6qc3dvbkc",
+    "host": "ec2-54-204-35-248.compute-1.amazonaws.com",
+    "dialect": "postgres"
   }
 }
 

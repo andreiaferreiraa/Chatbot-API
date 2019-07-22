@@ -31,9 +31,13 @@ app.use((req, res, next) => {
 });
 
 
-const sequelize = new Sequelize('projetofinal','root','password',{
-    host: 'localhost',
-    dialect: 'mysql'
+const sequelize = new Sequelize('deofo6qc3dvbkc','alakjierosgtbo','f840d93b9cf4ecc7ab9e0a6f59d7fdd93c6f3ca88e5752bd54baa0c0145ead24',{
+    host: 'ec2-54-204-35-248.compute-1.amazonaws.com',
+    dialect: 'postgres',
+    port: 5432,
+    dialectOptions: {
+        "ssl": true
+    }
 });
 
 apiUtilizadores(app, db);
@@ -44,11 +48,13 @@ apiLogin(app, db);
 apiGeneralQuestions(app);
 apiSpecificQuestions(app);
 
-//db.sequelize.sync().then(function(){
-app.listen(8000, function(){
-        console.log("A escuta no porto 8000");
+var port = process.env.PORT || 8000;
+
+sequelize.sync().then(function(){
+app.listen(port, function(){
+        console.log(`A escuta no porto ${port}`);
 });
-//});
+});
 
 
 
