@@ -34,6 +34,14 @@ module.exports = {
           key: 'id',
           as: 'location'
         }
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
       }
     });
 

@@ -13,7 +13,15 @@ module.exports = {
       name: Sequelize.STRING,
       username: Sequelize.STRING,
       password: Sequelize.STRING,
-      email: Sequelize.STRING
+      email: Sequelize.STRING,
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
     });
   },
 
