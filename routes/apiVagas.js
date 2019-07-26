@@ -819,6 +819,7 @@ module.exports = function (app, db) {
             res.status(500).json({ erro: "Erro no pedido da Vaga" })
         });
     });
+    
     app.get('/api/jobs/:idLocal/:idArea', function (req, res) {
         db.Jobs.findAll({
             where: {

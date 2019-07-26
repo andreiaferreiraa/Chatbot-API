@@ -29,7 +29,7 @@ module.exports = {
    });
    const location_Coimbra = await Locations.findOne({
     where: {
-        name: "Porto"
+        name: "Coimbra"
     }
    });
 
